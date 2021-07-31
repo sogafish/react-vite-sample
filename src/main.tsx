@@ -1,11 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { DefaultTypelessProvider } from 'typeless';
 import './index.css'
 import App from './App'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <DefaultTypelessProvider>
     <App />
-  </React.StrictMode>,
+  </DefaultTypelessProvider>,
   document.getElementById('root')
 )
